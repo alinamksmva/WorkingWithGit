@@ -1,0 +1,143 @@
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~
+$ cd C:\\Users\\Alina\\Desktop
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop
+$ mkdir QA_Mobile
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop
+$ cd QA_Mobile
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile
+$ git init
+Initialized empty Git repository in C:/Users/Alina/Desktop/QA_Mobile/.git/
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ touch text.txt
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ nano text.txt
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git add .
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text.txt
+
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git commit -m "Initial commit"
+[main (root-commit) 0983370] Initial commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 text.txt
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git remote -v
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git remote add origin git@github.com:alinamksmva/QA_Mobile.git
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git remote -v
+origin  git@github.com:alinamksmva/QA_Mobile.git (fetch)
+origin  git@github.com:alinamksmva/QA_Mobile.git (push)
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git push origin
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git push --set-upstream origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:alinamksmva/QA_Mobile.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git push origin
+Everything up-to-date
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git branch
+* main
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git branch second
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git branch
+* main
+  second
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (main)
+$ git checkout second
+Switched to branch 'second'
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (second)
+$ git branch
+  main
+* second
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (second)
+$ git status
+On branch second
+nothing to commit, working tree clean
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (second)
+$ touch text_2.txt
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (second)
+$ nano text_2.txt
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (second)
+$ git status
+On branch second
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text_2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (second)
+$ git add .
+
+Алина@LAPTOP-9K31C6BI MINGW64 ~/Desktop/QA_Mobile (second)
+$ git status
+On branch second
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   text_2.txt
